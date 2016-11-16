@@ -25,4 +25,4 @@ def lambda_handler(event, context):
 		stopping_instances = ec2.instances.filter(InstanceIds=instance_ids).stop()
 		print stopping_instances
 	else:
-		print "No instances to be stopped"
+		print "No instances to be stopped found"
